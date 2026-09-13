@@ -124,6 +124,12 @@ def run_react_agent(user_query: str, provider, mcp_server: MCPAcademicServer) ->
                     "**Response:**",
                 1
                 )[1].strip()
+            elif "**Trả lời người dùng:**" in final_content:
+                final_content = final_content.split(
+                "**Trả lời người dùng:**",
+                1
+                )[1].strip()
+                
             print(
                 f"🏁 [Final Answer]: {final_content}"
             )

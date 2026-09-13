@@ -4,8 +4,8 @@
     "query": "Chào bạn, bạn có thể giới thiệu quy chế học vụ cơ bản của Đại học VinUni không?",
     "action_type": "FINAL_ANSWER",
     "thought": "Gemini phản hồi trực tiếp bằng văn bản (không cần gọi công cụ).",
-    "output": "Chào bạn! Đại học VinUni áp dụng hệ thống tín chỉ và các tiêu chuẩn học vụ quốc tế. Dưới đây là tóm tắt một số quy chế học vụ cơ bản tại VinUni:\n\n1. **Hệ thống đánh giá và Thang điểm:** \n   - VinUni sử dụng thang điểm chữ (A, A-, B+, B, B-, C+, C, D, F) tương ứng với Thang điểm GPA hệ 4.0.\n   - Điểm F được tính là trượt và sinh viên phải học lại môn đó để cải thiện điểm.\n\n2. **Tiêu chuẩn đạt (Good Standing):**\n   - Sinh viên cần duy trì điểm trung bình tích lũy (CGPA - Cumulative Grade Point Average) tối thiểu từ **2.0/4.0** trở lên để được coi là đạt yêu cầu học tập và đủ điều kiện tốt nghiệp.\n\n3. **Cảnh cáo học vụ và Buộc thôi học (Academic Probation & Dismissal):**\n   - Nếu CGPA của sinh viên rớt xuống dưới 2.0 trong một học kỳ, sinh viên sẽ bị đặt vào tình trạng **Cảnh cáo học vụ (Academic Probation)** và nhận được sự hỗ trợ từ cố vấn học tập (Academic Advisor).\n   - Nếu sinh viên tiếp tục không cải thiện được điểm số trong các học kỳ tiếp theo theo quy định cụ thể của trường, có thể phải đối mặt với quyết định **Buộc thôi học (Dismissal)**.\n\n4. **Đăng ký tín chỉ:**\n   - Mỗi học kỳ, sinh viên có một giới hạn số lượng tín chỉ tối thiểu và tối đa được phép đăng ký (thường dao động trong khoảng từ 12 đến 18 tín chỉ tùy thuộc vào chương trình đào tạo và quy định từng kỳ).\n\n5. **Chính sách chuyên cần (Attendance):**\n   - VinUni rất coi trọng việc tham gia lớp học. Sinh viên bắt buộc phải tham dự các buổi học theo đúng quy định của từng giảng viên và môn học. Việc vắng mặt quá số buổi cho phép có thể dẫn đến việc bị cấm thi cuối kỳ.\n\nNếu bạn cần tìm hiểu chi tiết hơn về một khía cạnh cụ thể nào (như học bổng, quy định chuyển ngành, hay quy trình mượn tài liệu thư viện), cứ cho mình biết nhé!",
-    "latency_ms": 4116.95
+    "output": "Chào bạn! Tôi là Trợ lý Tác tử Quản lý Thư viện & Tài liệu của Đại học VinUni. \n\nVề quy chế học vụ cơ bản của VinUni, trường áp dụng các tiêu chuẩn giáo dục tiên tiến theo mô hình đại học tinh hoa, với một số điểm nổi bật sau:\n\n1. **Hệ thống tín chỉ và Đánh giá:** \n   - Chương trình học được tổ chức theo hệ thống tín chỉ (credits), tính trên khối lượng học tập của sinh viên (bao gồm giờ lên lớp, tự học, thảo luận, thực hành).\n   - Kết quả học tập được đánh giá bằng thang điểm chữ (A, B, C, D, F) tương ứng với điểm số hệ 4, và được tổng kết qua Điểm trung bình tích lũy (GPA).\n\n2. **Tiêu chuẩn học tập:**\n   - Sinh viên cần duy trì mức GPA tối thiểu theo quy định (thường là từ 2.0/4.0 trở lên) để đảm bảo tình trạng học tập tốt.\n   - Nếu GPA tích lũy xuống dưới ngưỡng quy định, sinh viên có thể rơi vào diện cảnh cáo học vụ (academic warning) và cần cải thiện kết quả trong học kỳ tiếp theo.\n\n3. **Yêu cầu tốt nghiệp:**\n   - Hoàn thành đủ số tín chỉ yêu cầu của chương trình đào tạo (bao gồm các môn đại cương, cơ sở ngành, chuyên ngành và đồ án/khóa luận tốt nghiệp).\n   - Đạt chuẩn đầu ra về ngoại ngữ (tiếng Anh) và các kỹ năng mềm theo cam kết của trường.\n   - Hoàn thành thời gian rèn luyện, thực tập hoặc các học phần bắt buộc khác (nếu có).\n\nNếu bạn cần tra cứu thông tin chi tiết hơn về các tài liệu, giáo trình hoặc quy định cụ thể lưu trữ tại thư viện, bạn cứ cho tôi biết mã tài liệu hoặc nội dung cần tìm nhé!",
+    "latency_ms": 3803.13
   },
   {
     "step": 1,
@@ -29,15 +29,15 @@
         }
       ]
     },
-    "latency_ms": 1470.75
+    "latency_ms": 1548.84
   },
   {
     "step": 2,
     "query": "Hãy tra cứu thông tin học vụ của sinh viên SV2026001.",
     "action_type": "FINAL_ANSWER",
     "thought": "Gemini phản hồi trực tiếp bằng văn bản (không cần gọi công cụ).",
-    "output": "Dựa trên kết quả tra cứu từ hệ thống, sinh viên `SV2026001` hiện đang mượn 1 tài liệu với thông tin chi tiết như sau:\n\n* **Mã tài liệu:** BK2026001\n* **Tên tài liệu:** Introduction to Artificial Intelligence\n* **Ngày mượn:** 01/09/2026\n* **Hạn trả:** 20/09/2026\n* **Số lần đã gia hạn:** 0 / 2",
-    "latency_ms": 1963.41
+    "output": "Dựa trên thông tin từ hệ thống, sinh viên **SV2026001** hiện đang mượn 1 tài liệu với chi tiết như sau:\n\n* **Mã tài liệu:** BK2026001\n* **Tên tài liệu:** Introduction to Artificial Intelligence\n* **Ngày mượn:** 01/09/2026\n* **Hạn trả:** 20/09/2026\n* **Số lần đã gia hạn:** 0 / 2 lần tối đa",
+    "latency_ms": 1863.19
   },
   {
     "step": 1,
@@ -62,7 +62,7 @@
         "max_renewals": 2
       }
     },
-    "latency_ms": 1267.43
+    "latency_ms": 1561.73
   },
   {
     "step": 2,
@@ -83,15 +83,15 @@
       "due_date": "20/09/2026",
       "message": "Gia hạn thành công tài liệu 'Introduction to Artificial Intelligence' cho sinh viên SV2026001."
     },
-    "latency_ms": 1266.43
+    "latency_ms": 1364.7
   },
   {
     "step": 3,
     "query": "Tôi đang mượn cuốn sách có mã tài liệu BK2026001. Hãy gia hạn thời gian mượn cuốn sách này cho tôi.",
     "action_type": "FINAL_ANSWER",
     "thought": "Gemini phản hồi trực tiếp bằng văn bản (không cần gọi công cụ).",
-    "output": "Gia hạn thành công! \n\nCuốn sách **\"Introduction to Artificial Intelligence\"** (Mã tài liệu: **BK2026001**) của bạn đã được gia hạn thành công. \n\n- **Số lần đã gia hạn:** 1/2\n- **Hạn trả mới:** 20/09/2026",
-    "latency_ms": 1489.4
+    "output": "Cuốn sách **\"Introduction to Artificial Intelligence\"** (Mã tài liệu: **BK2026001**) của bạn đã được gia hạn thành công! \n\n- **Số lần đã gia hạn:** 1/2 lần\n- **Hạn trả mới:** 20/09/2026",
+    "latency_ms": 2071.86
   },
   {
     "step": 1,
@@ -116,7 +116,7 @@
         "max_renewals": 2
       }
     },
-    "latency_ms": 1314.31
+    "latency_ms": 1530.89
   },
   {
     "step": 2,
@@ -137,15 +137,15 @@
       "due_date": "20/09/2026",
       "message": "Gia hạn thành công tài liệu 'Introduction to Artificial Intelligence' cho sinh viên SV2026001."
     },
-    "latency_ms": 1682.28
+    "latency_ms": 1295.08
   },
   {
     "step": 3,
     "query": "Tôi muốn gia hạn cuốn sách BK2026001 đang mượn. Hãy kiểm tra tình trạng mượn và điều kiện gia hạn trước, nếu đủ điều kiện thì thực hiện gia hạn cho tôi.",
     "action_type": "FINAL_ANSWER",
     "thought": "Gemini phản hồi trực tiếp bằng văn bản (không cần gọi công cụ).",
-    "output": "Dựa trên kết quả từ hệ thống, quá trình gia hạn đã được thực hiện thành công. Dưới đây là chi tiết thông tin:\n\n- **Mã tài liệu:** BK2026001\n- **Tên sách:** Introduction to Artificial Intelligence\n- **Mã sinh viên:** SV2026001\n- **Số lần đã gia hạn:** 2/2\n- **Hạn trả mới:** 20/09/2026\n- **Trạng thái:** Gia hạn thành công.",
-    "latency_ms": 1513.81
+    "output": "Dựa trên kết quả từ hệ thống (Observation), việc gia hạn tài liệu đã được thực hiện thành công.\n\n- **Mã tài liệu:** BK2026001\n- **Tên tài liệu:** Introduction to Artificial Intelligence\n- **Mã sinh viên:** SV2026001\n- **Số lần gia hạn hiện tại:** 2 / 2 (đã đạt tối đa số lần gia hạn)\n- **Hạn trả mới:** 20/09/2026\n\nTài liệu \"Introduction to Artificial Intelligence\" (mã: BK2026001) đã được gia hạn thành công cho bạn. Hạn trả mới của sách là ngày **20/09/2026**. (Lưu ý: Đây là lần gia hạn cuối cùng cho phép đối với tài liệu này).",
+    "latency_ms": 1729.98
   },
   {
     "step": 1,
@@ -159,7 +159,7 @@
       "status": "NOT_FOUND",
       "message": "Không tìm thấy tài liệu có mã 'BK9999999'."
     },
-    "latency_ms": 1342.05
+    "latency_ms": 1192.98
   },
   {
     "step": 2,
