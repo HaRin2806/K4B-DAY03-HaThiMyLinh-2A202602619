@@ -59,7 +59,7 @@ gantt
   git commit -m "feat: complete Day 03 Lab Chatbot vs ReAct Agent"
   git push origin main
   ```
-* [ ] Nộp link Repo GitHub cá nhân lên hệ thống VLearn.
+* [ x] Nộp link Repo GitHub cá nhân lên hệ thống VLearn.
 
 ---
 
