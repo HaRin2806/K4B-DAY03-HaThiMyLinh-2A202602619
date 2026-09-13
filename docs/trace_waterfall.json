@@ -3,27 +3,170 @@
     "step": 1,
     "query": "Chào bạn, bạn có thể giới thiệu quy chế học vụ cơ bản của Đại học VinUni không?",
     "action_type": "FINAL_ANSWER",
-    "thought": "Câu hỏi chung về quy chế học vụ, trả lời trực tiếp không cần gọi Tool.",
-    "output": "[Mock Agent Response]: Xin chào! Quy chế học vụ VinUni yêu cầu sinh viên tích lũy tối thiểu 120 tín chỉ và duy trì GPA trên 2.0 để tốt nghiệp.",
-    "latency_ms": 2845.93
+    "thought": "Gemini phản hồi trực tiếp bằng văn bản (không cần gọi công cụ).",
+    "output": "Chào bạn! Đại học VinUni áp dụng hệ thống tín chỉ và các tiêu chuẩn học vụ quốc tế. Dưới đây là tóm tắt một số quy chế học vụ cơ bản tại VinUni:\n\n1. **Hệ thống đánh giá và Thang điểm:** \n   - VinUni sử dụng thang điểm chữ (A, A-, B+, B, B-, C+, C, D, F) tương ứng với Thang điểm GPA hệ 4.0.\n   - Điểm F được tính là trượt và sinh viên phải học lại môn đó để cải thiện điểm.\n\n2. **Tiêu chuẩn đạt (Good Standing):**\n   - Sinh viên cần duy trì điểm trung bình tích lũy (CGPA - Cumulative Grade Point Average) tối thiểu từ **2.0/4.0** trở lên để được coi là đạt yêu cầu học tập và đủ điều kiện tốt nghiệp.\n\n3. **Cảnh cáo học vụ và Buộc thôi học (Academic Probation & Dismissal):**\n   - Nếu CGPA của sinh viên rớt xuống dưới 2.0 trong một học kỳ, sinh viên sẽ bị đặt vào tình trạng **Cảnh cáo học vụ (Academic Probation)** và nhận được sự hỗ trợ từ cố vấn học tập (Academic Advisor).\n   - Nếu sinh viên tiếp tục không cải thiện được điểm số trong các học kỳ tiếp theo theo quy định cụ thể của trường, có thể phải đối mặt với quyết định **Buộc thôi học (Dismissal)**.\n\n4. **Đăng ký tín chỉ:**\n   - Mỗi học kỳ, sinh viên có một giới hạn số lượng tín chỉ tối thiểu và tối đa được phép đăng ký (thường dao động trong khoảng từ 12 đến 18 tín chỉ tùy thuộc vào chương trình đào tạo và quy định từng kỳ).\n\n5. **Chính sách chuyên cần (Attendance):**\n   - VinUni rất coi trọng việc tham gia lớp học. Sinh viên bắt buộc phải tham dự các buổi học theo đúng quy định của từng giảng viên và môn học. Việc vắng mặt quá số buổi cho phép có thể dẫn đến việc bị cấm thi cuối kỳ.\n\nNếu bạn cần tìm hiểu chi tiết hơn về một khía cạnh cụ thể nào (như học bổng, quy định chuyển ngành, hay quy trình mượn tài liệu thư viện), cứ cho mình biết nhé!",
+    "latency_ms": 4116.95
   },
   {
     "step": 1,
     "query": "Hãy tra cứu thông tin học vụ của sinh viên SV2026001.",
     "action_type": "TOOL_EXECUTION",
-    "tool_name": "academic_query",
+    "tool_name": "borrow_query",
     "arguments": {
       "student_id": "SV2026001"
     },
-    "observation": {},
-    "latency_ms": 799.12
+    "observation": {
+      "status": "SUCCESS",
+      "student_id": "SV2026001",
+      "data": [
+        {
+          "document_id": "BK2026001",
+          "title": "Introduction to Artificial Intelligence",
+          "borrow_date": "01/09/2026",
+          "due_date": "20/09/2026",
+          "renewal_count": 0,
+          "max_renewals": 2
+        }
+      ]
+    },
+    "latency_ms": 1470.75
   },
   {
     "step": 2,
     "query": "Hãy tra cứu thông tin học vụ của sinh viên SV2026001.",
     "action_type": "FINAL_ANSWER",
-    "thought": "Tổng hợp kết quả từ MCP Server thành công.",
-    "output": "Chưa thể trả lời chi tiết do chưa nhận được dữ liệu từ MCP Server (hãy hoàn thành TODO 2.1).",
+    "thought": "Gemini phản hồi trực tiếp bằng văn bản (không cần gọi công cụ).",
+    "output": "Dựa trên kết quả tra cứu từ hệ thống, sinh viên `SV2026001` hiện đang mượn 1 tài liệu với thông tin chi tiết như sau:\n\n* **Mã tài liệu:** BK2026001\n* **Tên tài liệu:** Introduction to Artificial Intelligence\n* **Ngày mượn:** 01/09/2026\n* **Hạn trả:** 20/09/2026\n* **Số lần đã gia hạn:** 0 / 2",
+    "latency_ms": 1963.41
+  },
+  {
+    "step": 1,
+    "query": "Tôi đang mượn cuốn sách có mã tài liệu BK2026001. Hãy gia hạn thời gian mượn cuốn sách này cho tôi.",
+    "action_type": "TOOL_EXECUTION",
+    "tool_name": "document_query",
+    "arguments": {
+      "document_id": "BK2026001"
+    },
+    "observation": {
+      "status": "SUCCESS",
+      "document_id": "BK2026001",
+      "data": {
+        "title": "Introduction to Artificial Intelligence",
+        "author": "Stuart Russell & Peter Norvig",
+        "location": "Thư viện tầng 2 - Kệ AI-03",
+        "status": "BORROWED",
+        "borrowed_by": "SV2026001",
+        "borrow_date": "01/09/2026",
+        "due_date": "20/09/2026",
+        "renewal_count": 0,
+        "max_renewals": 2
+      }
+    },
+    "latency_ms": 1267.43
+  },
+  {
+    "step": 2,
+    "query": "Tôi đang mượn cuốn sách có mã tài liệu BK2026001. Hãy gia hạn thời gian mượn cuốn sách này cho tôi.",
+    "action_type": "TOOL_EXECUTION",
+    "tool_name": "renew_document",
+    "arguments": {
+      "student_id": "SV2026001",
+      "document_id": "BK2026001"
+    },
+    "observation": {
+      "status": "SUCCESS",
+      "student_id": "SV2026001",
+      "document_id": "BK2026001",
+      "title": "Introduction to Artificial Intelligence",
+      "renewal_count": 1,
+      "max_renewals": 2,
+      "due_date": "20/09/2026",
+      "message": "Gia hạn thành công tài liệu 'Introduction to Artificial Intelligence' cho sinh viên SV2026001."
+    },
+    "latency_ms": 1266.43
+  },
+  {
+    "step": 3,
+    "query": "Tôi đang mượn cuốn sách có mã tài liệu BK2026001. Hãy gia hạn thời gian mượn cuốn sách này cho tôi.",
+    "action_type": "FINAL_ANSWER",
+    "thought": "Gemini phản hồi trực tiếp bằng văn bản (không cần gọi công cụ).",
+    "output": "Gia hạn thành công! \n\nCuốn sách **\"Introduction to Artificial Intelligence\"** (Mã tài liệu: **BK2026001**) của bạn đã được gia hạn thành công. \n\n- **Số lần đã gia hạn:** 1/2\n- **Hạn trả mới:** 20/09/2026",
+    "latency_ms": 1489.4
+  },
+  {
+    "step": 1,
+    "query": "Tôi muốn gia hạn cuốn sách BK2026001 đang mượn. Hãy kiểm tra tình trạng mượn và điều kiện gia hạn trước, nếu đủ điều kiện thì thực hiện gia hạn cho tôi.",
+    "action_type": "TOOL_EXECUTION",
+    "tool_name": "document_query",
+    "arguments": {
+      "document_id": "BK2026001"
+    },
+    "observation": {
+      "status": "SUCCESS",
+      "document_id": "BK2026001",
+      "data": {
+        "title": "Introduction to Artificial Intelligence",
+        "author": "Stuart Russell & Peter Norvig",
+        "location": "Thư viện tầng 2 - Kệ AI-03",
+        "status": "BORROWED",
+        "borrowed_by": "SV2026001",
+        "borrow_date": "01/09/2026",
+        "due_date": "20/09/2026",
+        "renewal_count": 1,
+        "max_renewals": 2
+      }
+    },
+    "latency_ms": 1314.31
+  },
+  {
+    "step": 2,
+    "query": "Tôi muốn gia hạn cuốn sách BK2026001 đang mượn. Hãy kiểm tra tình trạng mượn và điều kiện gia hạn trước, nếu đủ điều kiện thì thực hiện gia hạn cho tôi.",
+    "action_type": "TOOL_EXECUTION",
+    "tool_name": "renew_document",
+    "arguments": {
+      "document_id": "BK2026001",
+      "student_id": "SV2026001"
+    },
+    "observation": {
+      "status": "SUCCESS",
+      "student_id": "SV2026001",
+      "document_id": "BK2026001",
+      "title": "Introduction to Artificial Intelligence",
+      "renewal_count": 2,
+      "max_renewals": 2,
+      "due_date": "20/09/2026",
+      "message": "Gia hạn thành công tài liệu 'Introduction to Artificial Intelligence' cho sinh viên SV2026001."
+    },
+    "latency_ms": 1682.28
+  },
+  {
+    "step": 3,
+    "query": "Tôi muốn gia hạn cuốn sách BK2026001 đang mượn. Hãy kiểm tra tình trạng mượn và điều kiện gia hạn trước, nếu đủ điều kiện thì thực hiện gia hạn cho tôi.",
+    "action_type": "FINAL_ANSWER",
+    "thought": "Gemini phản hồi trực tiếp bằng văn bản (không cần gọi công cụ).",
+    "output": "Dựa trên kết quả từ hệ thống, quá trình gia hạn đã được thực hiện thành công. Dưới đây là chi tiết thông tin:\n\n- **Mã tài liệu:** BK2026001\n- **Tên sách:** Introduction to Artificial Intelligence\n- **Mã sinh viên:** SV2026001\n- **Số lần đã gia hạn:** 2/2\n- **Hạn trả mới:** 20/09/2026\n- **Trạng thái:** Gia hạn thành công.",
+    "latency_ms": 1513.81
+  },
+  {
+    "step": 1,
+    "query": "Hãy tra cứu thông tin và vị trí của tài liệu có mã BK9999999 trong thư viện.",
+    "action_type": "TOOL_EXECUTION",
+    "tool_name": "document_query",
+    "arguments": {
+      "document_id": "BK9999999"
+    },
+    "observation": {
+      "status": "NOT_FOUND",
+      "message": "Không tìm thấy tài liệu có mã 'BK9999999'."
+    },
+    "latency_ms": 1342.05
+  },
+  {
+    "step": 2,
+    "query": "Hãy tra cứu thông tin và vị trí của tài liệu có mã BK9999999 trong thư viện.",
+    "action_type": "FINAL_ANSWER",
+    "thought": "Kết thúc do Tool trả về lỗi hoặc không tìm thấy dữ liệu.",
+    "output": "Không tìm thấy tài liệu có mã 'BK9999999'.",
     "latency_ms": 10.0
   }
 ]

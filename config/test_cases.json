@@ -1,0 +1,37 @@
+[
+  {
+    "id": "TC01",
+    "type": "direct_query",
+    "question": "Chào bạn, bạn có thể giới thiệu quy chế học vụ cơ bản của Đại học VinUni không?",
+    "expected_behavior": "Chatbot trả lời trực tiếp từ System Prompt, không cần gọi bất kỳ Tool nào.",
+    "complexity": "Low"
+  },
+  {
+    "id": "TC02",
+    "type": "single_tool_query",
+    "question": "Hãy tra cứu thông tin học vụ của sinh viên SV2026001.",
+    "expected_behavior": "Agent nhận diện nhu cầu tra cứu, tự động phát sinh Tool Call 'academic_query' với mã SV2026001.",
+    "complexity": "Medium"
+  },
+  {
+    "id": "TC03",
+    "type": "document_renewal",
+    "question": "Tôi đang mượn cuốn sách có mã tài liệu BK2026001. Hãy gia hạn thời gian mượn cuốn sách này cho tôi.",
+    "expected_behavior": "Agent nhận diện yêu cầu gia hạn, kiểm tra thông tin tài liệu và điều kiện gia hạn của tài liệu, sau đó tự động phát sinh Tool Call 'renew_document' với mã tài liệu BK2026001 nếu tài liệu đủ điều kiện gia hạn.",
+    "complexity": "Medium"
+  },
+  {
+    "id": "TC04",
+    "type": "multi_step_reasoning",
+    "question": "Tôi muốn gia hạn cuốn sách BK2026001 đang mượn. Hãy kiểm tra tình trạng mượn và điều kiện gia hạn trước, nếu đủ điều kiện thì thực hiện gia hạn cho tôi.",
+    "expected_behavior": "Agent thực hiện chuỗi suy luận ReAct đa bước: trước tiên gọi Tool 'document_query' để tra cứu trạng thái tài liệu và thông tin hạn trả; tiếp theo kiểm tra điều kiện gia hạn; nếu đủ điều kiện thì gọi Tool 'renew_document' để thực hiện gia hạn; cuối cùng thông báo kết quả cho người dùng.",
+    "complexity": "High"
+  },
+  {
+    "id": "TC05",
+    "type": "edge_case_handling",
+    "question": "Hãy tra cứu thông tin và vị trí của tài liệu có mã BK9999999 trong thư viện.",
+    "expected_behavior": "Agent gọi Tool 'document_query' với mã tài liệu BK9999999. Nếu Tool trả về NOT_FOUND, Agent phải thông báo rằng không tìm thấy tài liệu trong hệ thống và không được tự bịa đặt tên sách, vị trí hoặc tình trạng tài liệu.",
+    "complexity": "Medium"
+  }
+]
